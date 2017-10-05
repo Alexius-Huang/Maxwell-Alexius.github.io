@@ -2533,8 +2533,8 @@ var Main = function (_React$Component) {
         ),
         _react2.default.createElement(
           _reactRouterDom.Link,
-          { to: 'resum\xE9', onClick: this.handleClick.bind(this) },
-          'Resum\xE9'
+          { to: 'resum\xE9' },
+          '>Resum\xE9'
         )
       );
     }

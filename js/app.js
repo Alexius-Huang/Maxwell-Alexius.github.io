@@ -18,7 +18,7 @@ class Main extends React.Component {
           <Route exact path="/"       component={ Home   } />
           <Route exact path="/resumé" component={ Resumé } />
         </Switch>
-        <Link to="resumé" onClick={this.handleClick.bind(this)}>Resumé</Link>
+        <Link to="resumé">>Resumé</Link>
       </main>
     )
   }
