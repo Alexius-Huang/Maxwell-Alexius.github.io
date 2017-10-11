@@ -1,0 +1,104 @@
+nav.navigation {
+  background-color: #333;
+  height: 40pt;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+nav.navigation > input#toggle-nav-list { display: none; }
+nav.navigation > label > span.nav-list-btn {
+  position: absolute;
+  right: 5pt;
+  top: 5pt;
+  width: 30pt;
+  height: 30pt;
+  background-color: white;
+  transition: .25s;
+}
+nav.navigation > label > span.nav-list-btn > span {
+  width: 20pt;
+  height: 3pt;
+  left: 5pt;
+  background-color: #333;
+  border-radius: 5pt;
+  display: inline-block;
+  position: absolute;
+  transition: .25s;
+}
+nav.navigation > label > span.nav-list-btn > span:nth-child(1) {
+  top: 5.25pt;
+}
+nav.navigation > label > span.nav-list-btn > span:nth-child(2) {
+  top: 13.5pt;
+}
+nav.navigation > label > span.nav-list-btn > span:nth-child(3) {
+  top: 21.75pt;
+}
+nav.navigation > div.nav-wrapper {
+  display: none;
+}
+
+/* Mobile part when trigger navigation toggle button */
+nav.navigation > input#toggle-nav-list:checked ~ label[for="toggle-nav-list"] > span.nav-list-btn {
+  background-color: #FFD700;
+  transition: .25s;
+}
+nav.navigation > input#toggle-nav-list:checked ~ label > span.nav-list-btn > span {
+  background-color: #333;
+  transition: .25s;
+}
+nav.navigation > input#toggle-nav-list:checked ~ label > span.nav-list-btn > span:nth-child(1) {
+  top: 8pt;
+  left: 9pt;
+  transform-origin: left top;
+  transform: rotate(45deg);
+}
+nav.navigation > input#toggle-nav-list:checked ~ label > span.nav-list-btn > span:nth-child(2) {
+  opacity: 0;
+}
+nav.navigation > input#toggle-nav-list:checked ~ label > span.nav-list-btn > span:nth-child(3) {
+  transform-origin: right bottom;
+  transform: rotate(135deg);
+  top: 18.75pt;
+  left: -13.5pt;
+}
+
+nav.navigation > input#toggle-nav-list:checked ~ div.nav-wrapper {
+  position: fixed;
+  top: 40pt;
+  display: block;
+  width: 100vw;
+  height: calc(100vh - 30pt);
+  opacity: 1;
+  animation: navSlideDown .5s;
+  background-color: #333;
+}
+nav.navigation > input#toggle-nav-list:checked ~ div.nav-wrapper > a {
+  text-decoration: none;
+  background-color: white;
+  margin: 15pt auto;
+  display: block;
+  height: 30pt;
+  line-height: 30pt;
+  width: 100pt;
+  text-align: center;
+  color: #333;
+  transition: .25s;
+}
+nav.navigation > input#toggle-nav-list:checked ~ div.nav-wrapper > a.active {
+  transform: rotate(-4deg);
+  background-color: #FFD700;
+  transition: .25s;
+  pointer-events: none;
+}
+
+@keyframes navSlideDown {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: calc(100vh - 30pt);
+    opacity: 1;
+  }
+}

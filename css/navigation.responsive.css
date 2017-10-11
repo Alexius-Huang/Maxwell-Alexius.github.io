@@ -1,0 +1,58 @@
+/* Landscape
+@media (min-width: 576px) {
+}
+*?
+
+/* Desktop */
+@media (min-width: 768px) {
+  nav.navigation {
+    height: 70pt;
+    font-size: 0;
+  }
+  nav.navigation:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 70pt;
+    vertical-align: bottom;
+  }
+  nav.navigation > label > span.nav-list-btn {
+    display: none;
+    pointer-events: none;
+  }
+  nav.navigation > div.nav-wrapper {
+    width: 100vw;
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+  }
+  nav.navigation > div.nav-wrapper > a {
+    opacity: 1;
+    display: inline-block;
+    width: 120pt;
+    height: 40pt;
+    line-height: 40pt;
+    font-size: 12pt;
+    color: white;
+    text-align: center;
+    transition: .25s;
+  }
+  nav.navigation > div.nav-wrapper > a:hover,
+  nav.navigation > div.nav-wrapper > a.active {
+    background-color: white;
+    color: #333;
+    height: 35pt;
+    border-bottom: 5pt solid #FFD700;
+  }
+  nav.navigation > div.nav-wrapper > a.active.index-link {
+    background-color: #FFD700;
+    border-color: #222;
+  }
+  nav.navigation > div.nav-wrapper > a:hover {
+    transition: .25s;
+    border-color: #222;
+  }  
+  nav.navigation > div.nav-wrapper > a.active {
+    pointer-events: none;
+  }
+}
