@@ -4,6 +4,8 @@ nav.navigation {
   top: 0;
   left: 0;
   width: 100vw;
+  position: relative;
+  z-index: 100;
 }
 nav.navigation > input#toggle-nav-list { display: none; }
 nav.navigation > label > span.nav-list-btn {

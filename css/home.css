@@ -1,0 +1,41 @@
+section.home {
+  background-color: #FFD700;
+  padding: 20pt;
+  font-family: 'Oswald', sans-serif;
+}
+section.home > h1.name {
+  text-decoration: underline;
+  margin-bottom: 20pt;
+}
+section.home > img.avatar {
+  display: block;
+  margin: 0 auto 10pt auto;
+  max-width: 80%;
+  transform-origin: center center;
+  transform: rotate(5deg);
+  margin-bottom: 20pt;
+  transition: .25s;
+}
+section.home > img.avatar:hover {
+  transform: rotate(0deg);
+  max-width: 100%;
+  transition: .25s;
+}
+
+section.home > ul.contact-links {
+  display: block;
+  width: 100%;
+  font-size: 0;
+}
+section.home > ul.contact-links > li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+section.home > ul.contact-links > li > a {
+  display: inline-block;
+  width: 80%;
+}
+section.home > ul.contact-links > li > a > img {
+  max-width: 100%;
+}

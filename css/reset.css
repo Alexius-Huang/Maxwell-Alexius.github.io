@@ -7,9 +7,20 @@ html, body {
   font-family: 'Quicksand', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 input:focus, button:focus { outline: none; }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
