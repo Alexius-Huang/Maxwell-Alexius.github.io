@@ -1,0 +1,24 @@
+/* Landscape
+@media (min-width: 576px) {
+}
+*?
+
+/* Desktop */
+@media (min-width: 768px) {
+  section.home {
+    margin-top: 70pt;
+  }
+  section.home > div > ul.about-details > li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 15pt solid #FFD700;
+    border-left: 15pt solid #FFD700;
+    border-right: 15pt solid #555;
+    border-bottom: 15pt solid #555;
+    box-shadow: 3pt 3pt 3pt rgba(0, 0, 0, 0.5);
+  }
+}

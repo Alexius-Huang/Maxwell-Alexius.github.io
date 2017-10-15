@@ -14796,19 +14796,54 @@ var Home = function (_React$Component) {
         );
       });
 
+      var aboutDetailsHTML = this.props.aboutDetails.map(function (info) {
+        return _react2.default.createElement(
+          "li",
+          { key: info.key },
+          _react2.default.createElement("img", { src: "./img/home." + info.imgPath, alt: info.alt }),
+          _react2.default.createElement(
+            "h2",
+            null,
+            info.title
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            info.content
+          )
+        );
+      });
+
       return _react2.default.createElement(
         "section",
         { className: "home" },
         _react2.default.createElement(
-          "h1",
-          { className: "name" },
-          "Maxwell Alexius"
+          "div",
+          { className: "section-separator" },
+          _react2.default.createElement(
+            "h1",
+            { className: "name" },
+            "Maxwell Alexius"
+          ),
+          _react2.default.createElement("img", { className: "avatar", src: "./img/maxwell_at_HK_squared.jpg", alt: "Maxwell Alexius" })
         ),
-        _react2.default.createElement("img", { className: "avatar", src: "./img/maxwell_at_HK_squared.jpg", alt: "Maxwell Alexius" }),
         _react2.default.createElement(
-          "ul",
-          { className: "contact-links" },
-          contactHTML
+          "div",
+          { className: "section-separator" },
+          _react2.default.createElement(
+            "ul",
+            { className: "contact-links" },
+            contactHTML
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "section-separator" },
+          _react2.default.createElement(
+            "ul",
+            { className: "about-details" },
+            aboutDetailsHTML
+          )
         )
       );
     }
@@ -14841,6 +14876,25 @@ Home.defaultProps = {
     link: 'https://medium.com/@maximilianhuang',
     imgPath: 'medium.black.png',
     alt: 'Medium Logo Black'
+  }],
+  aboutDetails: [{
+    key: 1,
+    imgPath: 'front-end.png',
+    alt: 'Front End Engineer Icon by Maxwell Alexius',
+    title: 'Web Developer',
+    content: 'I\'m a web developer in Taipei City, Taiwan. I have about a year of experience on programming and mostly focusing on full stack web development.'
+  }, {
+    key: 2,
+    imgPath: 'artist-and-design.png',
+    alt: 'Artist and Design Icon by Maxwell Alexius',
+    title: 'Artist & Designer',
+    content: 'I\'m also an artist and a designer. I draw any kinds of art including sketch, water paint, oil paint, pastels, and computer graphics (by Adobe Illustrator).'
+  }, {
+    key: 3,
+    imgPath: 'dragon.png',
+    alt: 'Dragon Icon by Maxwell Alexius',
+    title: 'Dragon Worshipper',
+    content: 'I\'m a Middle Ages enthusiast, and dragons are the most fantastic and legendary creature which I love the most.'
   }]
 };
 

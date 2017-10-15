@@ -1,0 +1,86 @@
+section.home {
+  background-color: #FFD700;
+  padding: 20pt;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 40pt;
+}
+
+section.home > div.section-separator + div.section-separator {
+  margin: 30pt 0;
+}
+
+section.home > div > h1.name {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20pt;
+  color: #333;
+  font-size: 25pt;
+}
+section.home > div > img.avatar {
+  display: block;
+  margin: 0 auto 10pt auto;
+  max-width: 80%;
+  transform-origin: center center;
+  transform: rotate(5deg);
+  margin-bottom: 20pt;
+  transition: .25s;
+  box-shadow: 3pt 3pt 3pt rgba(0, 0, 0, 0.5)
+}
+section.home > div > img.avatar:hover {
+  transform: rotate(0deg);
+  max-width: 100%;
+  transition: .25s;
+}
+
+section.home > div > ul.contact-links,
+section.home > div > ul.about-details {
+  display: block;
+  width: 100%;
+  font-size: 0;
+}
+section.home > div > ul.contact-links > li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+section.home > div > ul.contact-links > li > a {
+  display: inline-block;
+  width: 80%;
+}
+section.home > div > ul.contact-links > li > a > img {
+  max-width: 100%;
+}
+
+section.home > div > ul.about-details > li {
+  display: block;
+  position: relative;
+  width: calc(100% + 40pt);
+  margin: 10pt -20pt;
+  padding: 20pt 0 0 0;
+  background-color: #333;
+  text-align: center;
+  box-shadow: 0 5pt 5pt rgba(0, 0, 0, 0.5);
+}
+section.home > div > ul.about-details > li + li {
+  margin-top: 50pt;
+}  
+section.home > div > ul.about-details > li > img {
+  max-width: 200px;
+  margin-bottom: 10pt;
+}
+section.home > div > ul.about-details > li > h2 {
+  color: #FFD700; /*#3E92FF;*/
+  font-size: 25pt;
+  margin-bottom: 20pt;
+  position: relative;
+}
+section.home > div > ul.about-details > li > p {
+  font-size: 14pt;
+  text-align: justify;
+  text-justify: inter-word;
+  letter-spacing: 1pt;
+  background-color: #555;
+  color: #FFD700;
+  padding: 20pt;
+  font-family: 'Alegreya Sans', sans-serif;
+}
